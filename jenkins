@@ -1,0 +1,45 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
+        stage('Dev') {
+            steps {
+                echo 'Dev Environment'
+            }
+        }
+        stage('Test Env') {
+            steps {
+                echo ' Test Environment'
+            }
+        }
+        stage('UAT') {
+            steps {
+                echo 'UAT enviornment'
+            }
+        }
+        stage('STAGE') {
+            steps {
+                echo 'Stage Env'
+            }
+        }
+        stage('PROD') {
+            steps {
+                echo 'Prod'
+            }
+        }
+    }
